@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: 27vw;
    }
 
    .prop .title-wrapper-ece{
@@ -27,6 +28,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    min-width: 33vw
    }
   
    .prop .title-wrapper-ece b{
@@ -40,6 +42,7 @@
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    width: 15vw
    }
    
    .prop .contact-info i{
@@ -68,7 +71,7 @@
    
    .prop h1 {
     color: #030303;
-    font-size: 28px;
+    font-size: 2rem;
     margin: 0;
    }
    
