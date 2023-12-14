@@ -76,3 +76,20 @@
     color: #030303;
     margin: 0;
    }
+
+
+   @media screen and (max-width : 1100px){
+    .prop{
+        display: block;
+    }
+    .prop .title-wrapper{
+        display: none;
+    }
+    .prop .contact-info{
+        display: none;
+    }
+    .prop .title-wrapper-ece{
+        margin: 0 auto;
+        right: 0; 
+    }
+   }

@@ -3,7 +3,7 @@ import '../Styles/Billboard.css';
 
 function Billboard() {
     return (
-        <div className="billboard-container">
+        <div className="billboard-container" id='billboard'>
             {/* Billboard Items */}
             <div className="billboard-item">
                 <img src="image1.jpg" alt="Image 1" />
