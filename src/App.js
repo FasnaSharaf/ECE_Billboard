@@ -10,7 +10,6 @@ function App() {
   return (
       <div className="App" style={{backgroundColor:'#e4c0cb',maxWidth:'100vw'}}>
         
-          <Sm />
           <Prop />
           <Header />
           
@@ -21,6 +20,7 @@ function App() {
           </main>
 
           <Footer />
+          <Sm />
       </div>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import '../Styles/Prop.css';
 const Prop = () => {
     return (
-        <header className="prop">
+        <header className="prop" id='prop'>
 
           <div className="title-wrapper">
             <img className="logo" src="./Cet_emblem-removebg-preview.png" alt="Logo" />

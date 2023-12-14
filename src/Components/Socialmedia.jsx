@@ -3,7 +3,7 @@ import '../Styles/Socialmedia.css';
 
 const Sm = () => {
     return (
-        <header className="sm">
+        <header className="sm" id='sm'>
                     <div className='title-wrapper'>
                     <i class="fa fa-linkedin" style={{ color: 'blue' }}></i>
                     <a href="https://www.linkedin.com/">LinkedIn</a>
