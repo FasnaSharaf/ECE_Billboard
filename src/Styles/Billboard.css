@@ -1,0 +1,22 @@
+.billboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.billboard-item {
+    flex: 1 1 18rem;
+    margin: 3rem;
+    padding: 1.3rem;
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 50vh;
+    background-color: #ffcede;
+}
+
+.billboard-item img {
+    width: 100%;
+    height: auto;
+}

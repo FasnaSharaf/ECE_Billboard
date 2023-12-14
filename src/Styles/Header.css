@@ -1,0 +1,21 @@
+.header {
+    background-color: #900c38;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header nav ul li a:hover {
+    text-decoration: underline;
+}
