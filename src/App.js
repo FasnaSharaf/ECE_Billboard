@@ -1,18 +1,16 @@
 import React from 'react';
 import Billboard from './Components/Billboard';
-import Header from './Components/Header';
+import NavCustom from './Components/Navbars';
 import Footer from './Components/Footer';
-import Prop from './Components/Prop';
 import Sm from './Components/Socialmedia';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/App.css';
 
 function App() {
   return (
-      <div className="App" style={{backgroundColor:'#e4c0cb',maxWidth:'100vw'}}>
-        
-          <Prop />
-          <Header />
-          
+      <div className="App" style={{backgroundColor:'#e4c0cb'}}>
+            <div id="top" style={{ height: 0 }}/>
+        <NavCustom className="sticky-nav"></NavCustom>
           <main>
               <section className="billboard">
                   <Billboard />
