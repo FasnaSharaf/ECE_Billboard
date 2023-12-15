@@ -10,7 +10,7 @@ const Header = () => {
                     {/*at "to=" give id of a div tag to scroll*/ }
                     <Link to="prop" smooth= {true} duration={800}>Home</Link>   
                     <Link to="billboard" smooth= {true} duration={500}>Notifications</Link>
-                    <Link to="sm" smooth= {true} duration={2000}>Contact us</Link>
+                    <Link to="sm" smooth= {true} duration={500  }>Contact us</Link>
                     {/* <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Notifications</a></li>
