@@ -10,26 +10,26 @@ function Footer() {
       <MDBCol size="auto">
       <div className='webteam'>
         <span>The web team:</span>
-        <a href='h1' className='me-4 text-reset'>
-            <MDBIcon color='grey' fab icon='facebook-f' />
+        <a href='users' className='me-4 text-reset'>
+            <MDBIcon color='grey' fas icon='users' />
           </a>
         </div>
       </MDBCol>
       <MDBCol size="auto">
         <div>
-          <a href='h1' className='me-4 text-reset'>
+          <a href='facebook' className='me-4 text-reset'>
             <MDBIcon color='grey' fab icon='facebook-f' />
           </a>
-          <a href='h2' className='me-4 text-reset'>
+          <a href='twitter' className='me-4 text-reset'>
             <MDBIcon color='grey' fab icon='twitter' />
           </a>
-          <a href='h3' className='me-4 text-reset'>
+          <a href='google' className='me-4 text-reset'>
             <MDBIcon color='grey' fab icon='google' />
           </a>
-          <a href='h4' className='me-4 text-reset'>
+          <a href='instagram' className='me-4 text-reset'>
             <MDBIcon color='grey' fab icon='instagram' />
           </a>
-          <a href='h5' className='me-4 text-reset'>
+          <a href='linkedin' className='me-4 text-reset'>
             <MDBIcon color='grey' fab icon='linkedin' />
           </a>
           <a href='h6' className='me-4 text-reset'>
