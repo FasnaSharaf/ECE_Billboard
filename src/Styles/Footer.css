@@ -1,12 +1,10 @@
-.footer {
-    background-color: #900c38;
-    color: #fff;
-    padding: 20px 0;
+.webteam{
+    display: flex;
+    gap: 5px;
 }
-
-.footer p{
-    color: #fff;
-    text-decoration: none;
-    width: fit-content;
-    margin: 0 auto;
+.text-reset{
+    filter: opacity(80%);
+}
+.text-reset:hover{
+    filter: opacity(100%);
 }

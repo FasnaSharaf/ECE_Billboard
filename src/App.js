@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Billboard from './Components/Billboard';
 import NavCustom from './Components/Navbars';
 import Footer from './Components/Footer';
-import Sm from './Components/Socialmedia';
 import Oppam from './Components/Oppam';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/App.css';
-
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "mdbreact/dist/css/mdb.css";
 function App() {
   return (
     <div className="App" style={{ backgroundColor: '#e4c0cb', maxWidth: '100vw' }}>
@@ -22,7 +22,6 @@ function App() {
         </Router>
       </main>
       <Footer />
-      <Sm />
     </div>
   );
 }
