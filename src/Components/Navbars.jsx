@@ -11,7 +11,7 @@ function NavCustom() {
         <div className='props'> 
         <Image src='./eclogoblack.png' width={60} height={60}></Image>
         <div className='titlebox'>
-        <div className='title'>ECE BillBoard</div>
+        <div className='title'>ECE Forum</div>
         <div className='smalltitle'>College of Engineering Trivandrum</div>
         </div>
         </div>
@@ -24,7 +24,7 @@ function NavCustom() {
             <Nav.Link><Link to="billboard" smooth= {true} duration={500}>Notifications</Link></Nav.Link>
           </Nav>
           <Nav className='mr-auto'>
-          <Nav.Link href="#contacts"><Link to="sm" smooth= {true} duration={500}>Contact us</Link></Nav.Link>
+          <Nav.Link><Link to="contacts" smooth= {true} duration={500}>Contact us</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
