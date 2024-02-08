@@ -16,7 +16,7 @@ function Footer() {
         </div>
       </MDBCol>
       <MDBCol size="auto">
-        <div>
+        <div  id="contacts">
           <a href='facebook' className='me-4 text-reset'>
             <MDBIcon color='grey' fab icon='facebook-f' />
           </a>
