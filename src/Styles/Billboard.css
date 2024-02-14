@@ -42,3 +42,8 @@
 .button:hover {
     background-color: #ba3a4b;
 }
+.billboard-container{
+    width: 100%;
+    height: 40vh;
+    background-color: #900c38;
+}

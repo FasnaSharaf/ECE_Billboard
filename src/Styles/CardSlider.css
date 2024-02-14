@@ -1,0 +1,6 @@
+.slider-container{
+    width: 80%!important;
+    position: relative;
+    left: 10%;
+    gap: 10px;
+}
