@@ -1,5 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import { Image } from 'react-bootstrap';
+import React from 'react';
 import '../Styles/Carousal.css';
 function CarouselCustom({records}) {
   return (
