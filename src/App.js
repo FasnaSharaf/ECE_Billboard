@@ -67,7 +67,7 @@ function App() {
       date: record.get('date'),
     }))];
 
-    setGallery(updatedBillboardItems);
+    setBillboard(updatedBillboardItems);
     fetchNextPage();
 
 }, function done(err) {
@@ -75,7 +75,7 @@ function App() {
     if (err) { console.error(err); return; }
 });
   }, []);
-  
+
   return (
     <div>
       {loading ? (
