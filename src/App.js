@@ -56,18 +56,18 @@ function App() {
       setLoading(false);
       if (err) { console.error(err); return; }
   });
+
   base('Billboard').select({
     maxRecords: 10,
     view: "Grid view"
-}).eachPage(function page(galleryItems, fetchNextPage) {
-    const updatedGalleryItems = [...galleryItems, ...galleryItems.map(record => ({
-      name: record.get('name'),
+}).eachPage(function page(billboardItems, fetchNextPage) {
+    const updatedBillboardItems = [...billboardItems, ...billboardItems.map(record => ({
+      name: record.get('id'),
       description: record.get('description'),
-      tag: record.get('tag'),
-      imageUrl: record.get('imageUrl')[0].url
+      date: record.get('date'),
     }))];
 
-    setGallery(updatedGalleryItems);
+    setGallery(updatedBillboardItems);
     fetchNextPage();
 
 }, function done(err) {
@@ -75,6 +75,7 @@ function App() {
     if (err) { console.error(err); return; }
 });
   }, []);
+  
   return (
     <div>
       {loading ? (
