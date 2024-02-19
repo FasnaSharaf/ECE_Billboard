@@ -1,17 +1,22 @@
 import React from 'react';
 import '../Styles/Card.css';
 function Card(props){
-    const { name, description,url } = props;
+    const { name, description,url,tag } = props;
     return (
-        <div class="card-container">
-        <a href="/" class="hero-image-container">
-          <img class="hero-image" src={url} alt="Spinning glass cube"/>
-        </a>
-        <main class="main-content">
-          <h1>{name}</h1>
-          <p>{description}</p>
-        </main>
-      </div>
+      <li>
+      <a href="" class="card">
+        <img src={url} class="card__image" alt="" />
+        <div class="card__overlay">        
+          <div class="card__header">            
+            <div class="card__header-text">
+              <h3 class="card__title">{name}</h3>
+              <span class="card__status">{tag}</span>
+            </div>
+          </div>
+          <p class="card__description">{description}</p>
+        </div>
+      </a>
+    </li>
     );
 };
 export default Card;

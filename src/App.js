@@ -12,29 +12,48 @@ import "mdbreact/dist/css/mdb.css";
 import CarouselCustom from './Components/Carousal';
 import LoadingScreen from './Components/Loading';
 function App() {
-  const [records, setRecords] = useState([]);
+  const [carousalItems, setCarousal] = useState([]);
+  const [galleryItems, setGallery] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    console.log("hello");
     var base = new Airtable({apiKey: 'patEIftf6ErouVFwc.f3085100c905da7b0bf5336990947424495795a0b4b0c4ec735384678ca7021e'}).base('app3s7iPWjKOvxwVy');
     base('Carousal').select({
         maxRecords: 10,
         view: "Grid view"
-    }).eachPage(function page(records, fetchNextPage) {
-        const updatedRecords = [...records, ...records.map(record => ({
+      }).eachPage(function page(carousalItems, fetchNextPage) {
+        const updatedCarousalItems = [...carousalItems, ...carousalItems.map(record => ({
           name: record.get('name'),
           description: record.get('description'),
           tag: record.get('tag'),
           imageUrl: record.get('imageUrl')[0].url
         }))];
 
-        setRecords(updatedRecords);
+        setCarousal(updatedCarousalItems);
         fetchNextPage();
 
     }, function done(err) {
         setLoading(false);
         if (err) { console.error(err); return; }
     });
+
+    base('Gallery').select({
+      maxRecords: 10,
+      view: "Grid view"
+  }).eachPage(function page(galleryItems, fetchNextPage) {
+      const updatedGalleryItems = [...galleryItems, ...galleryItems.map(record => ({
+        name: record.get('name'),
+        description: record.get('description'),
+        tag: record.get('tag'),
+        imageUrl: record.get('imageUrl')[0].url
+      }))];
+  
+      setGallery(updatedGalleryItems);
+      fetchNextPage();
+  
+  }, function done(err) {
+      setLoading(false);
+      if (err) { console.error(err); return; }
+  });
   }, []);
   return (
     <div>
@@ -46,13 +65,13 @@ function App() {
       <div className="App" style={{ backgroundColor: 'black', maxWidth: '100vw' }}>
       <div id="top" style={{ height: 0 }}/>
       <NavCustom className="sticky-nav"></NavCustom>
-      <CarouselCustom records={records}/>   
+      <CarouselCustom records={carousalItems}/>   
     <main>
     
       <Router>
         <Routes>
           <Route path="/cards" element={<div className="title">Cards</div>} />
-          <Route path="/" element={<CardHolder />} />
+          <Route path="/" element={<CardHolder records={galleryItems}/>} />
         </Routes>
       </Router>
     </main>

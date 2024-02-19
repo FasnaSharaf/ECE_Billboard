@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;700&family=Lobster&display=swap');
 .title{
   font-family: 'Kalnia';
   font-size: 24px;
@@ -10,12 +11,13 @@
 .navbar-collapse .show{
   display: flex;
   border-radius: 0 0 20px 20px;
-  background-color: #F8F9FA; /* Change the background color */
+  background-color: #44bba4ff; /* Change the background color */
   flex-direction: column;
 }
-.navbar{
+#navbar{
   text-align: center;
   padding-right: 1%;
+  background-color: antiquewhite;
 }
 .props{
   top: 0%;
@@ -46,4 +48,7 @@
   bottom: 0;
   height: 100%;
   color: rgb(70, 70, 70);
+}
+.nav-link{
+  font-family: "Lobster";
 }
