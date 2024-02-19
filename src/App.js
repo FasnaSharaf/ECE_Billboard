@@ -2,7 +2,7 @@ import React from 'react';
 import { useState,useEffect } from 'react';
 import Airtable from 'airtable';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import CardHolder from './Components/CardHolder';
+import Gallery from './Components/Gallery';
 import NavCustom from './Components/Navbars';
 import Footer from './Components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,7 +15,6 @@ import LoadingScreen from './Components/Loading';
 function App() {
   const [carousalItems, setCarousal] = useState([]);
   const [galleryItems, setGallery] = useState([]);
-  const [billboardItems, setBillboard] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     var base = new Airtable({apiKey: 'patEIftf6ErouVFwc.f3085100c905da7b0bf5336990947424495795a0b4b0c4ec735384678ca7021e'}).base('app3s7iPWjKOvxwVy');
@@ -56,24 +55,6 @@ function App() {
       setLoading(false);
       if (err) { console.error(err); return; }
   });
-
-  base('Billboard').select({
-    maxRecords: 10,
-    view: "Grid view"
-}).eachPage(function page(billboardItems, fetchNextPage) {
-    const updatedBillboardItems = [...billboardItems, ...billboardItems.map(record => ({
-      name: record.get('id'),
-      description: record.get('description'),
-      date: record.get('date'),
-    }))];
-
-    setBillboard(updatedBillboardItems);
-    fetchNextPage();
-
-}, function done(err) {
-    setLoading(false);
-    if (err) { console.error(err); return; }
-});
   }, []);
 
   return (
@@ -92,8 +73,8 @@ function App() {
           <Route path="/" element={
           <div className='wrapper_home'>
           <CarouselCustom records={carousalItems}/> 
-          <CardHolder records={galleryItems}/>
-          <Billboard records={billboardItems}></Billboard>
+          <Gallery records={galleryItems}/>
+          <Billboard></Billboard>
           </div>
           } />
         </Routes>

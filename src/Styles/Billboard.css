@@ -1,5 +1,80 @@
-.billboard-container{
-    height: 100vh;
-    position: relative;
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;700&family=Lobster&display=swap');
+.billboard{
+    background-color: aqua;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+.billboard-title{
+    text-align: center;
+    height: 12vh;
+    font-family: "Lobster", sans-serif;
+    font-size: 50px;
+    padding: 1%;
+    color: rgb(87, 87, 87);
+}
+.wrapper-billboard{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    gap: 2rem;
+    padding: 1%;
+    background-color:antiquewhite;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    height: 80vh;
+}
+.big-notification{
+    width: 80%;
+    display: flex; 
+    text-decoration: none;
+    border-radius: 10px;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+}
+.current-note{
+    top: -7.5%;
+    left: 5%;
+    width: 100%;
+    max-width: 400px;
+    margin: 2em auto;
+    height: 60%;
+    background-color: var(--var-card-dark);
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+.billboard-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; 
+    padding: 1%;
+    row-gap: 0.4rem;
+}
+.bill-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.bill{
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    background-color:bisque;
+    padding: 3%;
+}
+.date{
+    position: relative;
+    right: 0; /* Center items horizontally */
+    align-items: center;
+}
+.description{
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
 }

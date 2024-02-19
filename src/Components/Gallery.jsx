@@ -1,9 +1,9 @@
 import React from "react";
-import '../Styles/CardHolder.css'; // Import CSS for styling
+import '../Styles/Gallery.css'; // Import CSS for styling
 
 import Card from './Card.jsx';
 
-function CardHolder({records}) {
+function Gallery({records}) {
   return (
     
     <div className="section_cards">
@@ -23,4 +23,4 @@ function CardHolder({records}) {
   );
 }
 
-export default CardHolder;
+export default Gallery;
