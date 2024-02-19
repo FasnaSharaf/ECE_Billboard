@@ -3,16 +3,15 @@ import '../Styles/Card.css';
 function Card(props){
     const { name, description,url } = props;
     return (
-        <div id="curve" className="card">
-            <div className="footer">    
-                <div className="info">
-                    <div className="name"><a href={url}>{name}</a></div>
-                    <div className="job">{description}</div>
-                </div>
-            </div>
-            <div className="card-blur"></div>
-        </div>
+        <div class="card-container">
+        <a href="/" class="hero-image-container">
+          <img class="hero-image" src={url} alt="Spinning glass cube"/>
+        </a>
+        <main class="main-content">
+          <h1>{name}</h1>
+          <p>{description}</p>
+        </main>
+      </div>
     );
 };
-
 export default Card;

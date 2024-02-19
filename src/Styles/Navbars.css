@@ -5,6 +5,7 @@
   width: 100%;
   position: relative;
   top: 5px;
+  height: auto;
 }
 .navbar-collapse .show{
   display: flex;
@@ -38,11 +39,11 @@
   font-size: 8px;
   width: 100%;
   text-align: center;
-  top: auto;
-  padding: 1%;
   white-space: nowrap;
 }
 .titlebox{
   flex-direction: column;
   bottom: 0;
+  height: 100%;
+  color: rgb(70, 70, 70);
 }

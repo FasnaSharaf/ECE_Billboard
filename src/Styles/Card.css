@@ -1,66 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
-.card {
-    border-radius: 8px;
-    height: 350px;
-    width: 270px;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
 
-.card-blur {
-    position: absolute;
-    height: 100%;
-    width: calc(100% + 1px);
-    background-color: black;
-    opacity: 0;
-    transition: opacity 0.15s ease-in;
-}
-
-.card:hover .card-blur {
-    opacity: 0.6;
-}
-
-.footer {
-    z-index: 1;
-    position: absolute;
-    height: 80px;
+.card-container {
     width: 100%;
-    bottom: 0;
+    max-width: 400px;
+    margin: 2em auto;
+    filter: blur(5px);
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    padding: 2rem;
 }
 
-
-
-.info {
-	font-family: Inconsolata;
-    padding-left: 20px;
-    transform: translateY(250px);
-    background-color: aliceblue;
-    height: 100%;
-    transition: transform 1s cubic-bezier(5,0,0,0);
+h1 {
+    font: var(--var-heading);
+    color: var(--var-lightest);
+    padding: 1.2em 0;
 }
 
-.card:hover .info {
-    transform: translateY(0px);
+h2 {
+    font: var(--var-small-heading);
+    color: var(--var-lightest);
 }
 
-.name {
-    font-weight: bolder;
-    padding-top: 5px;
+p {
+    font: var(--var-para);
+    color: var(--var-soft-blue);
 }
 
-.job {
-    margin-top: 10px;
-}
-.billboard-container{
-    display: flex;
-    height: 40vh;
-    width: 100%;
-    background-color: aquamarine;
+@media (min-width:600px) {
+    body {
+        font-size: 18px;
+    }
 }

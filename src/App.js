@@ -2,10 +2,9 @@ import React from 'react';
 import { useState,useEffect } from 'react';
 import Airtable from 'airtable';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Billboard from './Components/Billboard';
+import CardHolder from './Components/CardHolder';
 import NavCustom from './Components/Navbars';
 import Footer from './Components/Footer';
-import Card from './Components/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/App.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -52,7 +51,8 @@ function App() {
     
       <Router>
         <Routes>
-          <Route path="/" element={<Billboard />} />
+          <Route path="/cards" element={<div className="title">Cards</div>} />
+          <Route path="/" element={<CardHolder />} />
         </Routes>
       </Router>
     </main>

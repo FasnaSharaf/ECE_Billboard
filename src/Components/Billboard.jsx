@@ -31,7 +31,7 @@ function Billboard() {
     }, []);
     return (
         <div className="billboard-container" id='billboard'>
-            <Card name="test" description="test2" url="www.google.com"></Card>
+            <Card name="test" description="test2" url="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-kB9LF7kd6_U%2FTmRLtKn7oHI%2FAAAAAAAAA2c%2F4f9PfPb0yJY%2Fs1600%2Frat_1.jpg&f=1&nofb=1&ipt=519bc490036b96ac84df2ac0e0c6c796aa6c993ffc14e6b42cdebce73b959c3f&ipo=images"></Card>
         </div>
         
 
