@@ -4,7 +4,7 @@ function Card(props){
     const { name, description,url,tag } = props;
     return (
       <li>
-      <a href="" class="card">
+      <div class="card">
         <img src={url} class="card__image" alt="" />
         <div class="card__overlay">        
           <div class="card__header">            
@@ -15,7 +15,7 @@ function Card(props){
           </div>
           <p class="card__description">{description}</p>
         </div>
-      </a>
+      </div>
     </li>
     );
 };
