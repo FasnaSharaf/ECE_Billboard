@@ -6,7 +6,6 @@
   width: 100%;
   position: relative;
   top: 5px;
-  height: auto;
 }
 .navbar-collapse .show{
   display: flex;
@@ -18,6 +17,7 @@
   text-align: center;
   padding-right: 1%;
   background-color: antiquewhite;
+  min-height: 5.2vh;
 }
 .props{
   top: 0%;

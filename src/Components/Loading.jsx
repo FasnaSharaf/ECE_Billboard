@@ -1,13 +1,12 @@
 import '../Styles/Loading.css';
 import React from 'react';
-import { PacmanLoader } from 'react-spinners';
-
-
+import TypeIt from "typeit-react";
 const LoadingScreen = () => {
   return (
     <div className="loading-screen">
-      <PacmanLoader color={'#36D7B7'} size={50} />
-      <p>Loading...</p>
+      <div className="notfoundcard">
+      <TypeIt options={{loop:true}}>Loading...</TypeIt>
+      </div>
     </div>
   );
 };

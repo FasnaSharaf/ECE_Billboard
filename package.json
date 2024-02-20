@@ -25,6 +25,7 @@
     "react-sliders": "^0.8.2",
     "react-spinners": "^0.13.8",
     "slick-carousel": "^1.8.1",
+    "typeit-react": "^2.7.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

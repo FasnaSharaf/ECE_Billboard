@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 function Billboard() {
     const [billboardItems, setBillboard] = useState([]);
     const [offset,setOffset] = useState(0);
-    const [note,setNote] = useState();
+    const [note,setNote] = useState(0);
     const pageLength = 6;
     const arrayLength = 0;
     useEffect(() => {
@@ -20,9 +20,8 @@ function Billboard() {
               date: record.get('date'),
               text: record.get('text')
             }))];
-            console.log(updatedBillboardItems.length);
-            setNote(updatedBillboardItems[13]);
             const filteredRecord=updatedBillboardItems.slice(12+offset,12+pageLength+offset);
+            setNote(filteredRecord[0]);
             setBillboard(filteredRecord);
             fetchNextPage();
     

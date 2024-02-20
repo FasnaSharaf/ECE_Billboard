@@ -6,7 +6,7 @@ import Card from './Card.jsx';
 function Gallery({records}) {
   return (
     
-    <div className="section_cards">
+    <div className="section_cards gallery">
     <div className="title_cards">Gallery</div>
     <div className="cards">
     <ul className="card_holder">

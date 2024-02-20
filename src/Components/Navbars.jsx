@@ -20,7 +20,7 @@ function NavCustom() {
             <div className='spacer'></div>
           <Nav className="mx-auto">
             <Nav.Link><Link to="top" smooth= {true} duration={500}>Home</Link></Nav.Link>
-            <Nav.Link><Link to="prop" smooth= {true} duration={500}>Gallery</Link></Nav.Link>
+            <Nav.Link><Link to="gallery" smooth= {true} duration={500}>Gallery</Link></Nav.Link>
             <Nav.Link><Link to="billboard" smooth= {true} duration={500}>Notifications</Link></Nav.Link>
           </Nav>
           <Nav className='mr-auto'>
