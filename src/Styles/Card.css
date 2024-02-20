@@ -103,3 +103,23 @@
     display: flex;
     justify-content: center;
   } 
+
+  @media screen and (max-width: 768px){
+    .card:click .card__header {
+      transform: translateY(0);
+    }
+    .card:click .card__header-text{
+      display:contents;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 3%;
+      border-radius: 10%;
+      backdrop-filter: blur(5px);
+    }
+    .card:click .card__overlay {
+      transform: translateY(0);
+    }
+    .card:click .card__image {      
+      filter: blur(2px);
+      filter: brightness(0.4);
+    }
+  }

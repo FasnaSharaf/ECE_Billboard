@@ -18,7 +18,7 @@ function App() {
   const [galleryItems, setGallery] = useState([]);
   const [loading, setLoading] = useState(true);
   const [loadingTimer, setLoadingTimer] = useState(true);
-  const MINUTE_MS = 5000;
+  const MINUTE_MS = 4000;
 
   useEffect(() => {
     const timeout = setTimeout(() => {

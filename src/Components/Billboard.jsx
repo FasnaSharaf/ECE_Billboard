@@ -2,11 +2,11 @@ import '../Styles/Billboard.css';
 import Airtable from 'airtable';
 import { useState,useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
-function Billboard() {
+const Billboard = () => {
     const [billboardItems, setBillboard] = useState([]);
     const [offset,setOffset] = useState(0);
     const [note,setNote] = useState(0);
-    const pageLength = 6;
+    const pageLength = 5;
     const arrayLength = 0;
     useEffect(() => {
         var base = new Airtable({apiKey: 'patEIftf6ErouVFwc.f3085100c905da7b0bf5336990947424495795a0b4b0c4ec735384678ca7021e'}).base('app3s7iPWjKOvxwVy');
