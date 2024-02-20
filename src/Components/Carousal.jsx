@@ -12,8 +12,8 @@ function CarouselCustom({records}) {
             <Image src={record.imageUrl}></Image>
             <Carousel.Caption>
               <div className='textCarousal'>
-              <h3>{record.name}</h3>
-              <p>{record.description}</p>
+              <div className='itemTitle'>{record.name}</div>
+              <div className='itemDescription'>{record.description}</div>
               </div>
             </Carousel.Caption>
           </Carousel.Item>

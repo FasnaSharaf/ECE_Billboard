@@ -9,6 +9,14 @@ img{
 .textCarousal{
     display: block;
 }
+.itemTitle{
+    font-family: "Lobster";
+    font-size: 200px;
+}
+.itemDescription{
+    font-family: "Oswald,sans-serrif";
+    font-size: 20px;
+}
 .carousalItem:hover + .textCarousal{
     display: block;
 }

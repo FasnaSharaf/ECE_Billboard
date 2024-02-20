@@ -13,6 +13,7 @@ import CarouselCustom from './Components/Carousal';
 import Billboard from './Components/Billboard';
 import LoadingScreen from './Components/Loading';
 import NotFound from './Components/NotFound';
+import WebTeam from './Components/WebTeam';
 function App() {
   const [carousalItems, setCarousal] = useState([]);
   const [galleryItems, setGallery] = useState([]);
@@ -108,7 +109,12 @@ function App() {
   <div className="loader-container">
     <LoadingScreen />
   </div>} />
+  <Route path="/team" exact={true} element={
+    <div className="notfoundland">
+    <WebTeam/>
+    </div>} />
 </Routes>
+
 </Router>
 </div>
 

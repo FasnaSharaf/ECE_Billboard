@@ -3,7 +3,7 @@ function NotFound() {
 return(
     <div className="notfound">
         <div className="notfoundcard">
-            <div className="code">CODE KB24</div>
+            <div className="code">CODE 404</div>
             <div className="smalltext">page not found</div>
         </div>
     </div>
