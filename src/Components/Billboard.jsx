@@ -5,8 +5,9 @@ import Card from 'react-bootstrap/Card';
 function Billboard() {
     const [billboardItems, setBillboard] = useState([]);
     const [offset,setOffset] = useState(0);
-    const [note,setNote] = useState({});
-    const pageLength = 10;
+    const [note,setNote] = useState();
+    const pageLength = 6;
+    const arrayLength = 0;
     useEffect(() => {
         var base = new Airtable({apiKey: 'patEIftf6ErouVFwc.f3085100c905da7b0bf5336990947424495795a0b4b0c4ec735384678ca7021e'}).base('app3s7iPWjKOvxwVy');
         base('Billboard').select({
@@ -19,9 +20,9 @@ function Billboard() {
               date: record.get('date'),
               text: record.get('text')
             }))];
+            console.log(updatedBillboardItems.length);
             setNote(updatedBillboardItems[13]);
-            console.log(note)
-            const filteredRecord=updatedBillboardItems.slice(12+offset,12+10+offset);
+            const filteredRecord=updatedBillboardItems.slice(12+offset,12+pageLength+offset);
             setBillboard(filteredRecord);
             fetchNextPage();
     
@@ -31,26 +32,36 @@ function Billboard() {
     }, [offset]);
 
     function fetchNextPage(){
-        setOffset(offset+10);
+        if((offset+pageLength)<=Math.floor(arrayLength/pageLength)*pageLength){
+            setOffset(offset+pageLength);
+        }
+        setOffset(offset+pageLength);
         console.log(offset);
     }
     function fetchPrevPage(){
-        setOffset(offset-10);
-        console.log(offset);
+        if((offset-pageLength)>=0){
+        setOffset(offset-pageLength);
+        }
     }
     function handleClick(key){
-        console.log("key"+key);
+        const val=key-1;
+        setNote(billboardItems[val-offset]);
+        console.log(note);
     }
     return (
     <div className='billboard'>
         <div className="billboard-title">Notifications</div>
         <div className="wrapper-billboard">
         <div className="big-notification">
+        {note && (
             <Card className="current-note">
-                {note.description}
+                <div className="note-desc">{note.description}</div>
+                <div className="note-text">{note.text}</div>
             </Card>
+)}
         </div>
         <div  className="billboard-container">
+        <div className="bills">
         {Array.isArray(billboardItems) && billboardItems.map(record => (
             record.description && (
                 <div className="bill-wrapper"  key={record.id}  onClick={() => handleClick(record.id)}>
@@ -61,9 +72,10 @@ function Billboard() {
                 </div>
             )
         ))}
+        </div>
         <div className="pageit">
-          <button onClick={fetchPrevPage}>Prev</button>
-          <button onClick={fetchNextPage}>Next</button>
+          <div className='btn btn__secondary' onClick={fetchPrevPage}>Prev</div>
+          <div className='btn btn__secondary' onClick={fetchNextPage}>Next</div>
         </div>
         </div>
         </div>

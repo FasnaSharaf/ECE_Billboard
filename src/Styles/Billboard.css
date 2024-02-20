@@ -1,29 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;700&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
 .billboard{
-    background-color: aqua;
+    background-color: #7fbd7c;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2%;
+        --s: 100px; /* control the size */
+        --c1: #E1F5C4;
+        --c2: #3B8183;
+        
+        --_g:#0000, #0004 5%,
+           var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
+           var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,
+           var(--c2) 86% 94%,#0004 95%,#0000;
+        background:
+          radial-gradient(100% 50% at 100% 0   ,var(--_g)),
+          radial-gradient(100% 50% at 0    50% ,var(--_g)),
+          radial-gradient(100% 50% at 100% 100%,var(--_g));
+        background-size: var(--s) calc(2*var(--s));
+      
 }
 .billboard-title{
     text-align: center;
-    height: 12vh;
+    height: 15vh;
     font-family: "Lobster", sans-serif;
     font-size: 50px;
-    padding: 1%;
-    color: rgb(87, 87, 87);
+    padding: 1.2%;
+    color: rgb(0, 0, 0);
+    border-radius:6px 6px 1px 1px ;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    background-color:#E1F5C4;
 }
 .wrapper-billboard{
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 60%;
     gap: 2rem;
     padding: 1%;
     background-color:antiquewhite;
     border-radius: 8px;
     border: 1px solid #fff;
-    height: 80vh;
+    height: 60vh;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 .big-notification{
     width: 80%;
@@ -45,29 +64,43 @@
     border-radius: 15px;
     margin-bottom: 1rem;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 248, 248);
 }
 .billboard-container{
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: flex-end;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; 
+    row-gap: 0.4rem;
+    position: relative;
+    top: 14%;
+}
+.bills{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
     padding: 1%;
     row-gap: 0.4rem;
 }
 .bill-wrapper{
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    
 }
 .bill{
     width: 100%;
     display: flex;
     border-radius: 10px;
     flex-direction: row;
-    background-color:bisque;
+    font-family: "Oswald",sans-serif;
+    background-color: #E1F5C4;
     padding: 3%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.bill:hover{
+    background-color: #d5ebb9;
 }
 .date{
     position: relative;
@@ -77,4 +110,45 @@
 .description{
     justify-content: center; /* Center items horizontally */
     align-items: center;
+}
+.pageit{
+    bottom: 20%;
+    flex-direction: row;
+    display: flex;
+}
+.btn{
+    border-radius: 20px;
+    background-color: #E1F5C4;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+.btn:hover{
+    border-radius: 20px;
+    background-color: #d5ebb9;
+}
+.current-note{
+    padding: 2%;
+    display: flex;
+    column-gap: 2%;
+    background-color: #E1F5C4;
+}
+.note-desc{
+    font-family: "Lobster";
+    font-size: 30px;
+    padding: 5%;
+    border-radius: 6px 6px 1px 1px;
+    align-items: baseline;
+    color: rgb(0, 0, 0);
+}
+.note-text{
+    height: 100%;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 1px 1px 6px 6px;
 }
