@@ -4,6 +4,7 @@ import React from 'react';
 import '../Styles/Carousal.css';
 function CarouselCustom({records}) {
   return (
+    <div className="test">
     <Carousel>
       {records.map(record => (
         // Check if imageUrl is valid before rendering Carousel.Item
@@ -20,6 +21,7 @@ function CarouselCustom({records}) {
         )
       ))}
     </Carousel>
+    </div>
   );
 }
 

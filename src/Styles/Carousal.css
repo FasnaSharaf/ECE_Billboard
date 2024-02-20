@@ -20,3 +20,7 @@ img{
 .carousalItem:hover + .textCarousal{
     display: block;
 }
+.test{
+    overflow: hidden;
+    border-radius: 10px;
+}
