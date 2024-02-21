@@ -8,7 +8,7 @@ import Footer from './Components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/App.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "mdbreact/dist/css/mdb.css";
+//import "mdbreact/dist/css/mdb.css";
 import CarouselCustom from './Components/Carousal';
 import Billboard from './Components/Billboard';
 import LoadingScreen from './Components/Loading';

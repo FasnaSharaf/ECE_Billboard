@@ -8,7 +8,6 @@ const Billboard = () => {
     const [note, setNote] = useState(0);
     const [length, setLength] = useState(0);
     const pageLength = 5;
-    const arrayLength = 0;
     useEffect(() => {
         var base = new Airtable({ apiKey: 'patEIftf6ErouVFwc.f3085100c905da7b0bf5336990947424495795a0b4b0c4ec735384678ca7021e' }).base('app3s7iPWjKOvxwVy');
         base('Billboard').select({
@@ -21,7 +20,6 @@ const Billboard = () => {
                 date: record.get('date'),
                 text: record.get('text')
             }))];
-            console.log(updatedBillboardItems);
             setLength(updatedBillboardItems.length);
             const filteredRecord = updatedBillboardItems.slice(12 + offset, 12 + pageLength + offset);
             setNote(filteredRecord[0]);
@@ -34,7 +32,7 @@ const Billboard = () => {
     }, [offset]);
 
     function fetchNextPage() {
-        if ((offset + pageLength) <= Math.floor((length - 12) / pageLength)*pageLength) {
+        if ((offset + pageLength) <= Math.floor((length - 12) / pageLength) * pageLength) {
             console.log(offset + pageLength);
             setOffset(offset + pageLength);
         }

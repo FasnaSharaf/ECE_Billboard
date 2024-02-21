@@ -11,11 +11,11 @@ img{
 }
 .itemTitle{
     font-family: "Lobster";
-    font-size: 200px;
+    font-size: 17vh;
 }
 .itemDescription{
     font-family: "Oswald,sans-serrif";
-    font-size: 20px;
+    font-size: 2vh;
 }
 .carousalItem:hover + .textCarousal{
     display: block;

@@ -7,18 +7,13 @@
   position: relative;
   top: 5px;
 }
-.navbar-collapse .show{
-  display: flex;
-  border-radius: 0 0 20px 20px;
-  background-color: #44bba4ff; /* Change the background color */
-  flex-direction: column;
-}
 #navbar{
   text-align: center;
   padding-right: 1%;
   background-color: antiquewhite;
   min-height: 5.2vh;
 }
+
 .props{
   top: 0%;
   display: flex;
@@ -33,9 +28,6 @@
 .navbar-toggler{
   margin-left: auto;
 }
-.spacer{
-  width: 7%;
-}
 .smalltitle{
   font-family: 'Kalnia';
   font-size: 8px;
@@ -48,6 +40,10 @@
   bottom: 0;
   height: 100%;
   color: rgb(70, 70, 70);
+}
+.dropdown-item{
+  display: inline-block;
+  text-align: center;
 }
 .nav-link{
   font-family: "Oswald",sans-serif;
