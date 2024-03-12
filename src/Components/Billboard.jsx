@@ -21,7 +21,14 @@ const Billboard = () => {
                 text: record.get('text')
             }))];
             setLength(updatedBillboardItems.length);
-            const filteredRecord = updatedBillboardItems.slice(12 + offset, 12 + pageLength + offset);
+            var funcshift=0;
+            for (let i = 0; i < updatedBillboardItems.length; i++) {
+                if (typeof updatedBillboardItems[i].id === 'number' && !isNaN(updatedBillboardItems[i].id)) {
+                    funcshift=(updatedBillboardItems[i].id);
+                }
+            }
+            const filteredRecord = updatedBillboardItems.slice(funcshift + offset, funcshift + pageLength + offset);
+            console.log(updatedBillboardItems.slice(5,7));
             setNote(filteredRecord[0]);
             setBillboard(filteredRecord);
             fetchNextPage();
