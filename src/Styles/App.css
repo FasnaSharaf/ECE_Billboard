@@ -8,6 +8,8 @@
 main{
   min-height: 81.9vh;
   padding: 2%;
+  padding: 0;
+  margin:0;
   --s: 100px; /* control the size */
   --c1: #E1F5C4;
   --c2: #3B8183;
@@ -29,6 +31,7 @@ main{
 .wrapper-home{
   display: flex;
   flex-direction: column;
+  max-width: 90%;
 }
 .spacer{
   height: 4.7vh;

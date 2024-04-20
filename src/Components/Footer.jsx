@@ -4,8 +4,8 @@ import '../Styles/Footer.css';
 function Footer() {
   return (
     <MDBFooter className='text-center text-lg-start text-muted'style={{ backgroundColor: 'inherit', color: 'white'}}>
-      <MDBContainer className='p-4'>
-      <MDBRow className='mt-3'>
+      <MDBContainer className='p-4'style={{paddingBottom: "0"}}>
+      <MDBRow className='mt-3' >
       <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'style={{ color: 'white' }} >
       <MDBCol size="auto">
       <div className='webteam'>

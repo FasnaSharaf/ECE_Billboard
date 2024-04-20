@@ -3,7 +3,7 @@ import '../Styles/Card.css';
 function Card(props){
     const { name, description,url,tag } = props;
     return (
-      <li>
+      <li className='list'>
       <div class="card">
         <img src={url} class="card__image" alt="" />
         <div class="card__overlay">        

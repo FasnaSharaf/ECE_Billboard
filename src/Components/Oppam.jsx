@@ -7,6 +7,7 @@ import Collapse from "@mui/material/Collapse";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 
+
 import "../Styles/Oppam.css";
 
 export default function NestedList({records}) {
@@ -68,7 +69,7 @@ export default function NestedList({records}) {
         <List
           sx={{
             width: "80%",
-            bgcolor: "#0f0f0f!important",
+                        bgcolor: "#0f0f0f!important",
           }}
           component="nav"
           aria-labelledby="nested-list-subheader"

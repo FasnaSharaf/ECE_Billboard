@@ -6,12 +6,15 @@
     display: flex; /* Use flexbox */
     justify-content: center; /* Center items horizontally */
 }
+/* .card__image{
+  width: 8;
+} */
 .card_holder{
     width: 80%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
-    margin: 4rem 5vw;
+    margin: 1rem 5vw 4rem 5vh;
     padding: 0;
     list-style-type: none;
     position: relative;
@@ -122,4 +125,20 @@
       filter: blur(2px);
       filter: brightness(0.4);
     }
+    /* .card_holder{
+      margin: 0;
+    } */
+
+  }
+
+  @media screen and (max-width: 370px){
+    .card_holder{
+      margin: 4rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+
   }

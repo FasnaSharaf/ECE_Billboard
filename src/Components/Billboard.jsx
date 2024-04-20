@@ -5,6 +5,9 @@ import Card from "react-bootstrap/Card";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa"; // Assuming you have imported the icons
 import { GoChevronRight } from "react-icons/go";
 import { GoChevronLeft } from "react-icons/go";
+import { FcHighPriority } from "react-icons/fc";
+
+
 
 
 const Billboard = () => {
@@ -87,7 +90,7 @@ const Billboard = () => {
   }
   return (
     <div className="billboard">
-      <div className="billboard-title">NOTIFICATIONS</div>
+      <div className="billboard-title"><FcHighPriority />NOTIFICATIONS<FcHighPriority /></div>
       <div className="wrapper-billboard">
         <div className="billboard-container">
           <div className="bills">
