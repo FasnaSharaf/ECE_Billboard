@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;700&family=Lobster&display=swap');
 .section_cards{ 
-  background-color: antiquewhite;
-  border-radius: 20px;
+  /* background-color: antiquewhite; */
+  /* border-radius: 20px; */
+  
   }
 .title_cards {
+  
     text-align: center;
     height: 10vh;
-    font-family: "Lobster", sans-serif;
-    font-size: 50px;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    /* font-size: 50px; */
     padding: 1%;
-    color:rgb(0, 0, 0);
+    color: white;
+    font-style: italic;
+    
   }
 .blob1{
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
@@ -18,3 +22,4 @@
   background-color: aqua;
   position: absolute;
 }
+

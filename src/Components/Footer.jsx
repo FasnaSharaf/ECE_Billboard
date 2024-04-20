@@ -3,10 +3,10 @@ import { MDBFooter, MDBContainer, MDBCol, MDBRow, MDBIcon } from 'mdb-react-ui-k
 import '../Styles/Footer.css';
 function Footer() {
   return (
-    <MDBFooter className='text-center text-lg-start text-muted'>
+    <MDBFooter className='text-center text-lg-start text-muted'style={{ backgroundColor: 'inherit', color: 'white'}}>
       <MDBContainer className='p-4'>
       <MDBRow className='mt-3'>
-      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
+      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'style={{ color: 'white' }} >
       <MDBCol size="auto">
       <div className='webteam'>
         <span>The web team:</span>

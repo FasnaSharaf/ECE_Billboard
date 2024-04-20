@@ -7,7 +7,7 @@ function Gallery({records}) {
   return (
     
     <div className="section_cards gallery">
-    <div className="title_cards">Gallery</div>
+    <div className="title_cards"><h1>GALLERY</h1></div>
     <div className="cards">
     <ul className="card_holder">
     {records.map(record => (

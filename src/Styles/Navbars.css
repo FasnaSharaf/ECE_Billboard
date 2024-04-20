@@ -2,15 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;700&family=Lobster&display=swap');
 .title{
   font-family: 'Kalnia';
-  font-size: 24px;
-  width: 100%;
-  position: relative;
-  top: 5px;
+  font-size: 20px;
+  margin: auto 0;
+  white-space: nowrap;
 }
 #navbar{
   text-align: center;
   padding-right: 1%;
-  background-color: antiquewhite;
+  background-color: #0f0f0f !important;
+  color: white !important;
   min-height: 5.2vh;
 }
 
@@ -27,6 +27,7 @@
 }
 .navbar-toggler{
   margin-left: auto;
+  color: white;
 }
 .smalltitle{
   font-family: 'Kalnia';
@@ -35,16 +36,11 @@
   text-align: center;
   white-space: nowrap;
 }
-.titlebox{
-  flex-direction: column;
-  bottom: 0;
-  height: 100%;
-  color: rgb(70, 70, 70);
-}
 .dropdown-item{
   display: inline-block;
   text-align: center;
 }
 .nav-link{
   font-family: "Oswald",sans-serif;
+  color: white !important;
 }
