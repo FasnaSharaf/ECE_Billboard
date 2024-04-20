@@ -59,10 +59,7 @@ export default function NestedList({records}) {
         <h1>OPPAM</h1>
         <h3>Academic Assistance</h3>
         <p>
-          OPPAM: EC department's initiative at College of Engineering Trivandrum
-          fosters collaborative learning. Students share notes and resources to
-          enhance academic performance, promoting a culture of support and
-          success.
+          OPPAM: An initiative by students of EC department College of Engineering Trivandrum
         </p>
       </div>
       <div className="content">

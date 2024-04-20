@@ -10,7 +10,7 @@ function NavCustom() {
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary sticky-top" id="navbar" >
       <Container fluid>
         <div className='props'>
-          <Image src='./eclogoblack.png' width={60} height={60}></Image>
+          <Image src='./eclogowhite.png' width={60} height={60}></Image>
           <div className='title'>ECE Billboard</div>
         </div>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{ color: '#0f0f0f' , backgroundColor : 'white'}} />
