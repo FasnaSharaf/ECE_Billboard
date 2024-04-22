@@ -24,9 +24,11 @@ function NavCustom() {
           </Nav>
           <Nav className='mr-auto' style={{ marginRight: '10px' }}>
           <Nav.Link style={{ marginRight: '40px' }}><Link to="top" smooth={true} duration={500}>Home</Link></Nav.Link>
+          <Nav.Link style={{ marginRight: '40px' }}><Link to="oppam" smooth={true} duration={500}>Oppam</Link></Nav.Link>
+          <Nav.Link style={{ marginRight: '40px' }}><Link to="billboard" smooth={true} duration={500}>Notifications</Link></Nav.Link>
             <Nav.Link style={{ marginRight: '40px' }}><Link to="gallery" smooth={true} duration={500}>Gallery</Link></Nav.Link>
-            <Nav.Link style={{ marginRight: '40px' }}><Link to="billboard" smooth={true} duration={500}>Notifications</Link></Nav.Link>
             <Nav.Link style={{ marginRight: '40px' }}><Link to="contacts" smooth={true} duration={500}>Contact us</Link></Nav.Link>
+            
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -130,6 +130,17 @@
     } */
 
   }
+  @media screen and (max-width: 500px){
+    .card_holder{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    
+
+  }
 
   @media screen and (max-width: 370px){
     .card_holder{

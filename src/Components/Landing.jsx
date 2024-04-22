@@ -2,12 +2,12 @@ import React from "react";
 import "../Styles/Landing.css";
 function Landing() {
   return (
-    <div style={{ width: "90%", margin: "0 auto" }}>
+    <div className = 'wrapper'style={{ width: "90%", margin: "0 auto" }}>
       <div className="heading">
         ELECTRONICS AND COMMUNICATION DEPARTMENT BILLBOARD
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <p style={{ color: "white", margin: "auto 40px" }}>
+        <p className= 'desc' style={{ color: "white", margin: "auto auto" }}>
           EC billboard is an initiative by the current ECE branch representative
           Jonath Joshy to simplify the engineering life of the students in his
           branch. The key aim of the initiative is to provide resources to the

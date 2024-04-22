@@ -13,7 +13,10 @@ margin-right: 30px;
     line-height: 1;
     display: none;
 }
-
+.desc{
+    margin: 0 auto;
+    width: 90%;
+}
 @media screen and (max-width: 768px){
     .myImage{
         display: none;
@@ -21,6 +24,7 @@ margin-right: 30px;
     .heading{
         display: block;
         padding: 1.5rem;
+        margin-top: 30px;
     }
 
 }
@@ -28,6 +32,9 @@ margin-right: 30px;
     .heading{
         display: block;
         font-size: 28px;
+    }
+    .wrapper{
+        width: 100%!important;
     }
 
 }
@@ -41,5 +48,6 @@ text-align: left;
 
 margin-left: 10px;
     }
+
 
 }
