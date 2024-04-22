@@ -18,7 +18,7 @@ function Landing() {
           uplift everyone of the department and offer a space where every one of
           EC department can feel home
         </p>
-        <img src={'./image.png'}  className="myImage"></img>
+        {/* <img src={'./image.png'}  className="myImage"></img> */}
       </div>
     </div>
   );

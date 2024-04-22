@@ -7,7 +7,7 @@
     justify-content: center;
 }
 .notfoundcard{
-    background-color: #E1F5C4;
+    background-color: white!important;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     width: 50%;
     height: 35vh;
