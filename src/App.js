@@ -135,7 +135,10 @@ function App() {
       <main>
 
               <div className='wrapper_home'>
-              <div>
+              
+
+              
+              <div className='animation'>
             <spline-viewer url="https://prod.spline.design/dpANmJDAzIP5EdUd/scene.splinecode"></spline-viewer>
         </div>
                 <Landing></Landing>
@@ -164,10 +167,10 @@ function App() {
   <div className="loader-container">
     <LoadingScreen />
   </div>} />
-  {/* <Route path="/team" exact={true} element={
+  <Route path="/team" exact={true} element={
     <div className="notfoundland">
     <WebTeam/>
-    </div>} /> */}
+    </div>} />
 </Routes>
 
 </Router>
