@@ -4,7 +4,7 @@ import "../Styles/Landing.css";
 
 function Landing() {
   return (
-    <div className = 'wrapper'style={{ width: "90%", margin: "0 auto" }}>
+    <div className = 'wrapper'style={{ width: "90%", margin: "70px auto 0 auto" }}>
       
       <div className="heading">
         ELECTRONICS AND COMMUNICATION DEPARTMENT BILLBOARD

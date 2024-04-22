@@ -6,6 +6,9 @@ import ListItemText from "@mui/material/ListItemText";
 import Collapse from "@mui/material/Collapse";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
+import { FaUserGraduate } from "react-icons/fa6";
+import { FcFlashOn } from "react-icons/fc";
+
 
 
 import "../Styles/Oppam.css";
@@ -56,8 +59,13 @@ export default function NestedList({records}) {
   return (
     <div className="oppam">
       <div className="top">
-        <h1>OPPAM</h1>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <FaUserGraduate style={{ fontSize: '2em', color: '#008170'}}></FaUserGraduate>
+    <h1 style={{ margin: '0 0 0 10px' }}>OPPAM</h1>
+</div>
+
         <h3>Academic Assistance</h3>
+        
         <p>
           OPPAM: An initiative by students of EC department College of Engineering Trivandrum
         </p>

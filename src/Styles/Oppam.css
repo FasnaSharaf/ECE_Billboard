@@ -12,6 +12,11 @@
     margin: 30px 0 0 0;
 }
 
+.box{
+    display: flex;
+    justify-content: center;
+}
+
 
 .content{
     width: 100%;
