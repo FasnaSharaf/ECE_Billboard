@@ -3,7 +3,7 @@ function WebTeam() {
 return(
     <div className="notfound">
         <div className="notfoundcard">
-            <div className="code">CODE KB24</div>
+            <div className="code">ERROR 404</div>
         </div>
     </div>
 );

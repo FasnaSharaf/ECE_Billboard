@@ -18,6 +18,9 @@ import WebTeam from './Components/WebTeam';
 import Landing from './Components/Landing';
 import Oppam from './Components/Oppam';
 
+import '@splinetool/viewer';
+
+
 function App() {
   const [carousalItems, setCarousal] = useState([]);
   const [galleryItems, setGallery] = useState([]);
@@ -132,6 +135,9 @@ function App() {
       <main>
 
               <div className='wrapper_home'>
+              <div>
+            <spline-viewer url="https://prod.spline.design/dpANmJDAzIP5EdUd/scene.splinecode"></spline-viewer>
+        </div>
                 <Landing></Landing>
                 {/* <CarouselCustom records={carousalItems} /> */}
                 {/* <ControlledCarousel records={galleryItems}></ControlledCarousel> */}
@@ -158,10 +164,10 @@ function App() {
   <div className="loader-container">
     <LoadingScreen />
   </div>} />
-  <Route path="/team" exact={true} element={
+  {/* <Route path="/team" exact={true} element={
     <div className="notfoundland">
     <WebTeam/>
-    </div>} />
+    </div>} /> */}
 </Routes>
 
 </Router>

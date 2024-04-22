@@ -1,8 +1,11 @@
 import React from "react";
 import "../Styles/Landing.css";
+
+
 function Landing() {
   return (
     <div className = 'wrapper'style={{ width: "90%", margin: "0 auto" }}>
+      
       <div className="heading">
         ELECTRONICS AND COMMUNICATION DEPARTMENT BILLBOARD
       </div>

@@ -14,7 +14,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
-    margin: 1rem 5vw 4rem 5vh;
+    margin: 1rem auto 4rem auto;
     padding: 0;
     list-style-type: none;
     position: relative;
@@ -149,7 +149,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-    }
+    } 
+  }  
+ 
     
 
-  }
+ 
