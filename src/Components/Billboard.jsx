@@ -89,13 +89,15 @@ const Billboard = () => {
     setVisibleIndex(index === visibleIndex ? null : index); // Toggle visibility
   }
   return (
-    <div className="billboard">
+    <div className="billboard" style={{ backgroundColor: '#0f0f0f', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)', padding: '20px 0',width: "90%",
+    margin: "0 auto", borderRadius: '10px' }}>
       <div className="billboard-title"><FcHighPriority />NOTIFICATIONS<FcHighPriority /></div>
       <div className="wrapper-billboard">
         <div className="billboard-container">
           <div className="bills">
             {Array.isArray(billboardItems) &&
-              billboardItems.map(
+              billboardItems.slice() 
+              .sort((a, b) => new Date(b.date) - new Date(a.date)).map(
                 (record, index) =>
                   record.description && (
                     <div className="bill-wrapper" key={record.id}>

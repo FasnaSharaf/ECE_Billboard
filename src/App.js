@@ -40,25 +40,6 @@ function App() {
 
   useEffect(() => {
     var base = new Airtable({ apiKey: 'patEIftf6ErouVFwc.f3085100c905da7b0bf5336990947424495795a0b4b0c4ec735384678ca7021e' }).base('app3s7iPWjKOvxwVy');
-    base('Carousal').select({
-      maxRecords: 10,
-      view: "Grid view"
-    }).eachPage(function page(carousalItems, fetchNextPage) {
-      const updatedCarousalItems = [...carousalItems, ...carousalItems.map(record => ({
-        name: record.get('name'),
-        description: record.get('description'),
-        tag: record.get('tag'),
-        imageUrl: record.get('imageUrl')[0].url
-      }))];
-
-      setCarousal(updatedCarousalItems);
-      fetchNextPage();
-
-    }, function done(err) {
-      setLoading(false);
-      if (err) { console.error(err); return; }
-    });
-
     base('Gallery').select({
       maxRecords: 10,
       view: "Grid view"
@@ -117,8 +98,6 @@ function App() {
     
   }, []);
 
-  
-
   return (
 <div>
 <Router>
@@ -135,9 +114,6 @@ function App() {
       <main>
 
               <div className='wrapper_home'>
-              
-
-              
               <div className='animation'>
             <spline-viewer url="https://prod.spline.design/dpANmJDAzIP5EdUd/scene.splinecode"></spline-viewer>
         </div>

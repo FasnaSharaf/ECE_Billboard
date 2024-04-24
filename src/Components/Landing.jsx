@@ -11,12 +11,11 @@ function Landing() {
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <p className= 'desc' style={{ color: "white", margin: "auto auto" }}>
-          EC billboard is an initiative by the current ECE branch representative
-          Jonath Joshy to simplify the engineering life of the students in his
-          branch. The key aim of the initiative is to provide resources to the
-          students to enhance their academic life. The billboard focuses to
-          uplift everyone of the department and offer a space where every one of
-          EC department can feel home
+          Welcome to the EC Billboard, the beacon of inspiration and collaboration brought to you by the EC Association.
+          Here, you'll discover a treasure trove of resources curated to enrich your learning experience. 
+          Stay informed with the latest updates, connect with peers, and seize countless opportunities to excel in your studies.
+          This platform serves as a source of unity and empowerment, fostering a strong sense of community and belonging within the 
+          ECE department.
         </p>
         {/* <img src={'./image.png'}  className="myImage"></img> */}
       </div>
