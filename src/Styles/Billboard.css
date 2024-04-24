@@ -178,6 +178,7 @@
     .billboard-title{
         height: 9vh;
         font-size: 28px;
+        margin-bottom: 10px;
     }
     .note-text{
         font-size: 85%;
@@ -202,7 +203,7 @@
 @media screen and (max-width: 376px){
     
     .bill_desc{
-        font-size: 11px;
+        font-size: 10.5px;
     }
     .current-note{
         padding: 5%;

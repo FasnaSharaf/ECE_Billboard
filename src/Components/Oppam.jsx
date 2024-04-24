@@ -70,8 +70,7 @@ export default function NestedList({records}) {
           OPPAM: An initiative by students of EC department College of Engineering Trivandrum
         </p>
       </div>
-      <div className="content" style={{ backgroundColor: '#0f0f0f', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)', padding: '20px 0',width: "90%",
-    margin: "0 auto", borderRadius: '10px'}}>
+      <div className="content" style={{ backgroundColor: '#0f0f0f', boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.8)', padding: '20px 0',width: "90%",margin: "0 auto", borderRadius: '10px' }}>
         <List
           sx={{
             width: "90%",
