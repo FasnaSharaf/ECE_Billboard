@@ -144,7 +144,7 @@
 
   @media screen and (max-width: 370px){
     .card_holder{
-      margin: 4rem 0;
+      /* margin: 4rem 0; */
       display: flex;
       flex-direction: column;
       justify-content: center;

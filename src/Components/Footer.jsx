@@ -20,7 +20,7 @@ function Footer() {
       
       <MDBCol size="auto">
         <div  id="contacts">
-          <a  target="_blank" rel="noreferrer" href='https://www.instagram.com/ec_association_cet/' className='me-4 text-reset'>
+          <a  target="_blank" rel="noreferrer" href='https://www.instagram.com/ec_association_cet/' className='me-4 text-reset' style={{marginLeft: "1.5rem"}}>
             <MDBIcon color='grey' fab icon='instagram' />
           </a>
           <a  target="_blank" rel="noreferrer" href='https://www.cet.ac.in/ece/' className='me-4 text-reset'>

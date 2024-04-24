@@ -1,4 +1,4 @@
-.loading-screen {
+/* .loading-screen {
     position: fixed;
     top: 0;
     left: 0;
@@ -24,4 +24,10 @@
   .notfoundcard{
     font-family: "Lobster";
     font-size: 5vh;
+  } */
+
+  .text{
+    font-size: 10vh;
+    font-weight: bold;
+    color: white;
   }
