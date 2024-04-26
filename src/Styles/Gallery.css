@@ -22,4 +22,6 @@
   background-color: aqua;
   position: absolute;
 }
-
+.slick-slide > div {
+  margin: 0 10px;
+}

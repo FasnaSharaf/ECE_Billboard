@@ -3,9 +3,8 @@ import '../Styles/Card.css';
 function Card(props){
     const { name, description,url,tag } = props;
     return (
-      <li className='list'>
-      <div class="card">
-        <img src={url} class="card__image" alt="" />
+        <div className='card'>
+          <img src={url} class="card__image" alt="" />
         <div class="card__overlay">        
           <div class="card__header">            
             <div class="card__header-text">
@@ -15,8 +14,7 @@ function Card(props){
           </div>
           <p class="card__description">{description}</p>
         </div>
-      </div>
-    </li>
+        </div>
     );
 };
 export default Card;
