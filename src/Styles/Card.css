@@ -23,6 +23,7 @@
 .card {
     max-width: 100%;
     min-width: 50%;
+    width: 100%!important;
     position: relative;
     display: block;
     height: 100%;  

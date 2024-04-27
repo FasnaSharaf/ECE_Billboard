@@ -25,3 +25,27 @@
 .slick-slide > div {
   margin: 0 10px;
 }
+.gallery{
+  display: none;
+}
+
+
+/* @media screen and (max-width: 680px){
+   .outer-box{
+    max-width: 300px!important;
+  } 
+  
+} */
+@media screen and (max-width: 600px){
+  .gallery{
+    display: block;
+  }
+  .hide{
+    display: none;
+  }
+  .outer-box{
+    margin: 0!important;
+    width: 100%!important;
+  }
+  
+}
