@@ -7,12 +7,13 @@
 .title_cards {
   
     text-align: center;
-    height: 10vh;
+    height: 60px;
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     /* font-size: 50px; */
     padding: 1%;
     color: white;
     font-style: italic;
+    margin-bottom: 20px;
     
   }
 .blob1{
@@ -47,5 +48,8 @@
     margin: 0!important;
     width: 100%!important;
   }
-  
+  .title_cards {  
+    margin-bottom: 10px;
+    
+  }
 }

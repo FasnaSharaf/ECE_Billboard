@@ -7,7 +7,7 @@ margin-right: 30px;
 .heading{
     color: white;
     padding: 0 2rem;
-    font-size: 7vh;
+    font-size: 10vw;
     font-weight: 700;
     font-style: italic;
     line-height: 1;
@@ -31,26 +31,12 @@ margin-right: 30px;
     }
 
 }
-@media screen and (max-width: 425px){
+@media screen and (max-width: 369px){
     .heading{
-        display: block;
-        font-size: 28px;
+      width: 9vw;
+      padding: 1rem;
     }
-    .wrapper{
-        width: 90%!important;
-    }
+    
 
 }
-@media screen and (max-width: 329px){
-    .heading{
-        
-font-size: 25px;
-font-weight: 700;
-/* line-height: 44.57px; */
-text-align: left;
 
-margin-left: 10px;
-    }
-
-
-}
