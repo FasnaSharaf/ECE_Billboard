@@ -31,6 +31,22 @@
 }
 
 
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px !important;
+ 
+}
+.slick-next{
+  height: 100%!important; 
+}
+.slick-prev{
+  height: 100%!important; 
+}
+
+.slick-prev:before {
+  margin-left: -9px !important; 
+}
+
 /* @media screen and (max-width: 680px){
    .outer-box{
     max-width: 300px!important;
