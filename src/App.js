@@ -19,6 +19,7 @@ import Landing from './Components/Landing';
 import Oppam from './Components/Oppam';
 
 import '@splinetool/viewer';
+import SplineAnimation from './Components/SplineAnimation';
 
 
 function App() {
@@ -115,7 +116,8 @@ function App() {
 
               <div className='wrapper_home'>
               <div className='animation'>
-            <spline-viewer url="https://prod.spline.design/dpANmJDAzIP5EdUd/scene.splinecode"></spline-viewer>
+            {/* <spline-viewer url="https://prod.spline.design/dpANmJDAzIP5EdUd/scene.splinecode"></spline-viewer> */}
+            <SplineAnimation></SplineAnimation>
         </div>
                 <Landing></Landing>
                 {/* <CarouselCustom records={carousalItems} /> */}
