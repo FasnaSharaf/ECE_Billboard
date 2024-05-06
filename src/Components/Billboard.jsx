@@ -81,7 +81,7 @@ const Billboard = () => {
                   >
                     <div className="bill_desc">{record.description}</div>
                     <div className="bill_date">{record.date}</div>
-                    <div className = "temp" style={{ cursor: "pointer", padding: "2.1vh" }}>
+                    <div style={{ cursor: "pointer", padding: "2.1vh" }}>
                       {index === note ? (
                         <FaChevronUp />
                       ) : (
