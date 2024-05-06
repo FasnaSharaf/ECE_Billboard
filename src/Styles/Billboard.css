@@ -216,7 +216,7 @@
 }
 @media screen and (max-width: 540px){
     .bill{
-        height:8.5vw
+        height:50px;
     }
     .bill_desc{
         font-size: 12px;
@@ -231,6 +231,6 @@
         padding: 5%;
     }
    .bill{
-    height: 10vw;
+    /* height: 10vw;     */
    }
 }
